@@ -8,6 +8,6 @@ This is a way to auto renew a certificate
 
 This script will install dependency and basic feature such as npm, git, nodejs (only works for debian and Ubuntu based Linux distributions)
 
-### restart.sh
+### monit.sh
 
-This script will restart the web-server
+This script will manage pm2 instances
