@@ -32,7 +32,8 @@ function install {
   # Update node
   sudo npm cache clean -f
   sudo npm install -g n
-  sudo n 10.1.0
+  //proxy will make this failed usefixe version instead ex: sudo n 10.1.0
+  sudo n latest
 
   # Yarn
   sudo npm install yarn -g
@@ -41,7 +42,7 @@ function install {
   sudo npm install rimraf -g
 
   # Pm2
-  npm install pm2@latest -g
+  sudo npm install pm2@latest -g
 
   # Allow npm compil install
   sudo apt install -y build-essential
