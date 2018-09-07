@@ -32,8 +32,7 @@ function install {
   # Update node
   sudo npm cache clean -f
   sudo npm install -g n
-  //proxy will make this failed usefixe version instead ex: sudo n 10.1.0
-  sudo n latest
+  sudo n 10.1.0
 
   # Yarn
   sudo npm install yarn -g
@@ -66,8 +65,6 @@ function clear {
   sudo rm -rf /opt/local/bin/node /opt/local/include/node /opt/local/lib/node_modules
   sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node.1 /usr/local/lib/dtrace/node.d
 
-  display "Delete hyper"
-  sudo apt-get purge --auto-remove -y hyper
 
   display "Done"
 }
@@ -78,11 +75,11 @@ function reset {
 }
 
 function helper {
-  echo "Usage: $0 [OPTIONS]"
+  echo "Usage: $0 [options]"
   echo ""
-  echo "OPTIONS:"
+  echo "Options:"
   echo " -i, --install start installing dependency and basic feature"
-  echo "-c, --clean clean each dependency and feaure"
+  echo "-c, --clear clean each dependency and feaure"
   echo "-i, --reset will launch a --clean command and a --install command"
 }
 
