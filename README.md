@@ -11,3 +11,7 @@ This script will install dependency and basic feature such as npm, git, nodejs (
 ### monit.sh
 
 This script will manage pm2 instances
+
+### mongodb-monit.sh
+
+This script will manage mongodb instances (also include install/uninstall process)
